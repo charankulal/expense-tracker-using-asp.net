@@ -8,10 +8,11 @@ namespace Expense_Tracker.Models
         [Key]
         public int TransactionId { get; set; }
 
-        // Category Id
+        [Range(1,int.MaxValue,ErrorMessage ="Please select a category!")]
         public int CategoryId { get; set; }
         public Category? Category { get; set; }
 
+        [Range(1, int.MaxValue, ErrorMessage = "Amount should not be empty!")]
         public int Amount { get; set; }
 
         [Column(TypeName = "nvarchar(75)")]
