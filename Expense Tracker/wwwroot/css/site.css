@@ -202,10 +202,9 @@ nav.navbar {
             background-color: #48545f14;
             transform: scale(1.05) translateZ(0px);
         }
-
-/*nav.navbar {
+nav.navbar {
     margin-left: 290px;
-}*/
+}
 
 /*Profile Pic*/
 img.profile-pic {
